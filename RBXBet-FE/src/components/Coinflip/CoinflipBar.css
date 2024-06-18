@@ -1,0 +1,76 @@
+.coinflipBar {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    .coinflipCreate {
+        form {
+            display: flex;
+            flex-direction: row;
+            gap: 7px;
+            height: 40px;
+            .betAmount {
+                outline: none;
+                color: #3C81F6;
+                padding: 10px 20px;
+                background-color: #1f2433;
+                border: none;
+                border-radius: 5px;
+                font-weight: 500;
+            }
+            button {
+                padding: 10px 15px;
+                font-weight: 700;
+                background-color: #3C81F6;
+                border: none;
+                border-radius: 5px;
+                color: white;
+                transition: 0.3s;
+            }
+            .coin {
+                appearance: none;
+                height: 40px;
+                width: 40px;
+            }
+            .coin:hover {
+                cursor: pointer;
+            }
+            #bux {
+                background-image: url('../../assets/icons/bux.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #tix {
+                background-image: url('../../assets/icons/tix.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                margin: 0;
+                appearance: none;
+            }
+            input:checked {
+                opacity: 100%;
+            }
+            input[type='radio']:not(:checked) {
+                opacity: 40%;
+            }
+        }
+    }
+    .history {
+        background-color: #1D2532;
+        border: none;
+        color: white;
+        padding: 10px 16px;
+        font-weight: 700;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        transition: 0.3s;
+    }
+    button:hover {
+        cursor: pointer;
+        opacity: 80%;
+    }
+}

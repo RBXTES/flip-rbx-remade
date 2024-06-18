@@ -1,0 +1,77 @@
+.chatBox {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 5px;
+    .username {
+        color: white;
+        font-weight: 500;
+    }
+    .Owner {
+        color: #c27cea;
+        font-weight: 600;
+    }
+    .VIP {
+        color: #ffcd81;
+        font-weight: 600;
+
+    }
+    .Moderator {
+        color: #75e6ff;
+        font-weight: 600;
+
+    }
+    .HighRoller {
+        color: #ff70ff;
+        font-weight: 600;
+
+    }
+    .Whale {
+        color: #2EB9DC;
+        font-weight: 600;
+
+    }
+    .Developer {
+        color: #ff6e76;
+        font-weight: 600;
+
+    }
+
+    .pfp {
+        object-fit: cover;
+        height: 55px;
+        width: 55px;
+        border-radius: 50%;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+        .topHalf {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .username {
+                margin-right: 7px;
+            }
+            .role {
+                height: 20px;
+                width: 20px;
+                margin-right: 5px;
+            }
+            .timeStamp {
+                opacity: 34%;
+                color: white;
+                font-weight: 300;
+            }
+        }
+        .message {
+            color: #B2B2B2;
+            opacity: 92%;
+            font-weight: 500;
+            word-break: break-all;
+        }
+    }
+
+}
